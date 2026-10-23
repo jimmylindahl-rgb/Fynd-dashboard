@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="color-scheme" content="dark light">
+  <title>Fynddashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Privat fyndbevakning</p>
+      <h1>Fynddashboard</h1>
+      <p class="subtitle">Smarta hem och homelab – samlat på ett ställe.</p>
+    </div>
+    <div class="update-card" aria-live="polite">
+      <span>Senast uppdaterad</span>
+      <strong id="lastUpdated">–</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid" aria-label="Sammanfattning">
+      <article class="summary-card"><span>Aktuella fynd</span><strong id="activeCount">0</strong></article>
+      <article class="summary-card"><span>Smarta hem</span><strong id="smartHomeCount">0</strong></article>
+      <article class="summary-card"><span>Homelab</span><strong id="homelabCount">0</strong></article>
+      <article class="summary-card"><span>Historik</span><strong id="historyCount">0</strong></article>
+    </section>
+
+    <section class="controls" aria-label="Filtrering och sortering">
+      <div class="tabs" id="categoryTabs">
+        <button class="tab active" data-category="all">Alla</button>
+        <button class="tab" data-category="smart-home">Smarta hem</button>
+        <button class="tab" data-category="homelab">Homelab</button>
+        <button class="tab" data-category="history">Historik</button>
+      </div>
+
+      <div class="control-row">
+        <label>
+          <span>Sök</span>
+          <input id="searchInput" type="search" placeholder="Produkt, butik, protokoll…">
+        </label>
+        <label>
+          <span>Sortera</span>
+          <select id="sortSelect">
+            <option value="newest">Nyast först</option>
+            <option value="discount">Störst rabatt</option>
+            <option value="price-low">Lägst pris</option>
+            <option value="price-high">Högst pris</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <div id="notice" class="notice"></div>
+      <div id="dealGrid" class="deal-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <h2>Inga fynd matchar filtret</h2>
+        <p>Ändra kategori, sökning eller sortering.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Privat dashboard. Produktpriser kan ändras snabbt – kontrollera alltid butikens aktuella pris före köp.</p>
+  </footer>
+
+  <script src="./deals.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
