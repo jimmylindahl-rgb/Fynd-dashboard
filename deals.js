@@ -1,7 +1,25 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-10-23T14:09:00+02:00",
-  note: "Första versionen innehåller historiska exempel från tidigare rapporterade fynd. Priserna är inte omverifierade som aktuella i denna fil. Dashboarden är publik men avråder sökmotorer från indexering.",
+  lastUpdated: "2026-10-26T15:44:00+01:00",
+  note: "Dashboarden uppdaterades 26 oktober med fynd som senast kontrollerades 24 oktober 2026. Priser och lagersaldo är inte omkontrollerade idag och kan ha ändrats. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan vara butikernas ordinarie priser eller separata styckpriser.",
   deals: [
+    {
+      id: "sonoff-snzb-02p-3-styrahem",
+      date: "2026-10-24",
+      category: "smart-home",
+      status: "active",
+      name: "Sonoff SNZB-02P temperatur- och luftfuktighetssensor – 3-pack",
+      store: "StyraHem",
+      price: 399,
+      referencePrice: 537,
+      discountPercent: 25.7,
+      compatibility: "Direkt/lokalt Homey",
+      protocol: "Zigbee 3.0",
+      extraHub: "Ingen – direkt till Homey Pro",
+      description: "Tre batteridrivna Zigbee-sensorer för temperatur och luftfuktighet. StyraHem uppger kompatibilitet med Homey Pro. CR2477-batterier ingår.",
+      limitation: "Frakt 59 kr under 750 kr ordervärde (totalt 458 kr för ett paket). Referenspriset 537 kr är butikens ordinarie pris; 30-dagars lägsta pris uppgavs vara 399 kr. Pris/lager senast kontrollerade 24 oktober, kontrollera före köp.",
+      imageUrl: "https://www.styrahem.se/content/images/thumbs/0003307_4238_600.jpeg",
+      productUrl: "https://www.styrahem.se/p/3972/3-x-temperatur-och-luftfuktighet-zigbee-sonoff-snzb-02p"
+    },
     {
       id: "aqara-water-leak-t1-3",
       date: "2026-10-21",
@@ -22,9 +40,9 @@ window.DEALS_DATA = {
     },
     {
       id: "switchbot-bot-2",
-      date: "2026-10-18",
+      date: "2026-10-24",
       category: "smart-home",
-      status: "history",
+      status: "active",
       name: "SwitchBot Bot – 2-pack",
       store: "Inet",
       price: 399,
@@ -34,15 +52,15 @@ window.DEALS_DATA = {
       protocol: "Bluetooth LE",
       extraHub: "Ingen för Homey inom BLE-räckvidd",
       description: "Fysisk knapptryckare för att automatisera äldre apparater utan smart anslutning.",
-      limitation: "Bluetooth-räckvidden till Homey är den viktigaste begränsningen.",
-      imageUrl: "",
-      productUrl: ""
+      limitation: "Bluetooth-räckvidden till Homey är den viktigaste begränsningen. Butikspris och lager kontrollerades vid tidigare sökning den 24 oktober; kontrollera på nytt före köp.",
+      imageUrl: "https://cdn.inet.se/product/688x386/8310227_iki8t2.png",
+      productUrl: "https://www.inet.se/produkt/v101661/switchbot-bot-vit-2-pack"
     },
     {
       id: "shelly-outdoor-plug-s-gen3-3",
-      date: "2026-10-15",
+      date: "2026-10-24",
       category: "smart-home",
-      status: "history",
+      status: "active",
       name: "Shelly Outdoor Plug S Gen3 – 3-pack",
       store: "Inet",
       price: 747,
@@ -52,15 +70,15 @@ window.DEALS_DATA = {
       protocol: "Wi-Fi / Matter over Wi-Fi",
       extraHub: "Ingen",
       description: "IP44-utomhusuttag med energimätning och lokal Homey-styrning.",
-      limitation: "Kräver 2,4 GHz Wi-Fi. Kontrollera butikens aktuella pris före köp.",
-      imageUrl: "",
-      productUrl: ""
+      limitation: "Kräver 2,4 GHz Wi-Fi. Webblager kontrollerades 23 oktober. Paketpris jämfört med tre separata styckpriser. Kontrollera aktuellt pris före köp.",
+      imageUrl: "https://cdn.inet.se/product/688x386/v101555_uhd4cs.png",
+      productUrl: "https://www.inet.se/produkt/v101555/shelly-outdoor-plug-s-gen3-3-pack"
     },
     {
       id: "thirdreality-smart-plug-e2-3",
-      date: "2026-10-14",
+      date: "2026-10-24",
       category: "smart-home",
-      status: "history",
+      status: "active",
       name: "ThirdReality Smart Plug E2 – 3-pack",
       store: "Inet",
       price: 399,
@@ -70,9 +88,9 @@ window.DEALS_DATA = {
       protocol: "Zigbee 3.0",
       extraHub: "Ingen",
       description: "Tre 16 A-uttag med energimätning. Fungerar även som Zigbee-router.",
-      limitation: "För inomhusbruk.",
-      imageUrl: "",
-      productUrl: ""
+      limitation: "För inomhusbruk. Lager kontrollerades vid tidigare sökning den 24 oktober. Jämförelsepriset motsvarar tre styckpriser; rabatt mot marknadspris kan avvika.",
+      imageUrl: "https://cdn.inet.se/product/688x386/v101497_1.png",
+      productUrl: "https://www.inet.se/produkt/v101497/thirdreality-smart-plug-e2-3-pack"
     },
     {
       id: "aqara-led-bulb-t2-3",
@@ -94,9 +112,9 @@ window.DEALS_DATA = {
     },
     {
       id: "aqara-motion-p2-3",
-      date: "2026-10-10",
+      date: "2026-10-24",
       category: "smart-home",
-      status: "history",
+      status: "active",
       name: "Aqara Motion & Light Sensor P2 – 3-pack",
       store: "Inet",
       price: 837,
@@ -106,9 +124,9 @@ window.DEALS_DATA = {
       protocol: "Matter over Thread",
       extraHub: "Ingen för grundfunktion",
       description: "Rörelse- och ljussensorer för Homeys Thread-nät.",
-      limitation: "Avancerade Aqara-inställningar kan kräva Aqara-hubb; tidigare användarrapporter har nämnt falska rörelsedetekteringar.",
-      imageUrl: "",
-      productUrl: ""
+      limitation: "Avancerade Aqara-inställningar kan kräva Aqara-hubb; användarrapporter har nämnt falska rörelsedetekteringar. Webblager kontrollerades vid tidigare sökning 24 oktober. Kräver fungerande Matter/Thread-parning i Homey Pro.",
+      imageUrl: "https://cdn.inet.se/product/688x386/v101603_8pfapl.png",
+      productUrl: "https://www.inet.se/produkt/v101603/aqara-rorelse-och-ljussensor-p2-3-pack"
     },
     {
       id: "shelly-1pm-gen3",
