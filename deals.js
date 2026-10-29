@@ -1,9 +1,9 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-10-29T13:48:31+01:00",
+  lastUpdated: "2026-10-29T13:48:47+01:00",
   lastChecked: "2026-10-29T13:48:31+01:00",
   lastCheckNote: "Bevakning slutförd, 3 nya smarta hem-fynd. Inga verifierat kvalificerade homelab-fynd.",
   lastDealAdded: "2026-10-29T13:48:31+01:00",
-  note: "Fyndpriserna kontrollerades senast den 24 oktober 2026 och kan ha ändrats. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan avse butikernas ordinarie priser eller styckpriser.",
+  note: "Nya fynd kontrollerades den 29 oktober 2026. Äldre fynd kan ha pris- och lageruppgifter från 24 oktober eller tidigare och är inte automatiskt omverifierade. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan avse butikernas ordinarie priser eller styckpriser.",
   deals: [
     {
       "id": "eglo-connect-z-rgb-gu10-12251-cs-20261029",
