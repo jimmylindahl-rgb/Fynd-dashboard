@@ -1,6 +1,9 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-10-26T15:44:00+01:00",
-  note: "Dashboarden uppdaterades 26 oktober med fynd som senast kontrollerades 24 oktober 2026. Priser och lagersaldo är inte omkontrollerade idag och kan ha ändrats. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan vara butikernas ordinarie priser eller separata styckpriser.",
+  lastUpdated: "2026-10-29",
+  lastChecked: null,
+  lastCheckNote: "Senaste schemalagda körningen den 24 oktober krävde användaråtgärd. Ingen senare slutförd bevakning är verifierad.",
+  lastDealAdded: "2026-10-26T15:44:00+01:00",
+  note: "Fyndpriserna kontrollerades senast den 24 oktober 2026 och kan ha ändrats. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan avse butikernas ordinarie priser eller styckpriser.",
   deals: [
     {
       id: "sonoff-snzb-02p-3-styrahem",
@@ -17,6 +20,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen – direkt till Homey Pro",
       description: "Tre batteridrivna Zigbee-sensorer för temperatur och luftfuktighet. StyraHem uppger kompatibilitet med Homey Pro. CR2477-batterier ingår.",
       limitation: "Frakt 59 kr under 750 kr ordervärde (totalt 458 kr för ett paket). Referenspriset 537 kr är butikens ordinarie pris; 30-dagars lägsta pris uppgavs vara 399 kr. Pris/lager senast kontrollerade 24 oktober, kontrollera före köp.",
+      whyGoodDeal: "399 kr för tre sensorer jämfört med butikens angivna ordinarie pris 537 kr (25,7 % lägre). Observera att 30-dagars lägsta pris redan var 399 kr och att frakt kan tillkomma.",
+      fitForSetup: "Kan användas som Zigbee-sensorer i Homey Pro 2026, som fortsätter vara huvudhubb. Via din befintliga Homey–Home Assistant-integration kan mätvärden eventuellt också visas i HA, beroende på vilka entiteter som exponeras. Kontrollera modellstödet före köp.",
+      useCases: ["Sätt en sensor i badrum eller tvättstuga och skapa ett Homey-flow när luftfuktigheten blir ovanligt hög.","Följ temperatur i förråd, sovrum och arbetsrum för att hitta kalla eller varma zoner.","Visa klimatvärden i en Home Assistant-dashboard utan att flytta Zigbee-enheterna från Homey."],
       imageUrl: "https://www.styrahem.se/content/images/thumbs/0003307_4238_600.jpeg",
       productUrl: "https://www.styrahem.se/p/3972/3-x-temperatur-och-luftfuktighet-zigbee-sonoff-snzb-02p"
     },
@@ -35,6 +41,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen",
       description: "Tre läckagesensorer som kan paras direkt med Homey Pro. Batteristatus och vattenlarm stöds.",
       limitation: "Ingen inbyggd siren. Kräver Zigbee-täckning där sensorerna placeras.",
+      whyGoodDeal: "Tidigare rapporterat paketpris 516 kr mot referenspriset 687 kr, cirka 25 % lägre. Fyndet ligger i historiken och priset är inte omverifierat.",
+      fitForSetup: "Läckagesensorer passar Homey som central för larm och Flows. Home Assistant kan komplettera med översikter via den redan installerade Homey-integrationen om sensorerna exponeras där.",
+      useCases: ["Placera en sensor under diskbänken och en vid tvättmaskinen för tidig varning om läckage.","Skicka pushnotis eller starta ett Homey-flow vid detekterat vatten.","Visa läckagestatus på en framtida rumsdisplay eller i Home Assistant."],
       imageUrl: "",
       productUrl: ""
     },
@@ -53,6 +62,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen för Homey inom BLE-räckvidd",
       description: "Fysisk knapptryckare för att automatisera äldre apparater utan smart anslutning.",
       limitation: "Bluetooth-räckvidden till Homey är den viktigaste begränsningen. Butikspris och lager kontrollerades vid tidigare sökning den 24 oktober; kontrollera på nytt före köp.",
+      whyGoodDeal: "Det tidigare kontrollerade tvåpacket kostade 399 kr mot 698 kr som jämförelse, ungefär 42,8 % lägre. Kontrollera pris och lager igen före köp.",
+      fitForSetup: "Kan vara intressant för en apparat som saknar smart gränssnitt, om din Homey Pro når enheten via Bluetooth och stöder modellen. Ingen ny Zigbee- eller Thread-infrastruktur behövs.",
+      useCases: ["Tryck mekaniskt på en befintlig knapp som inte går att styra via nätverk.","Låt ett Homey-flow utlösa ett knapptryck vid en viss tid eller ett valt scenario.","Prova smart styrning utan att bygga om apparaten eller installera ett elrelä."],
       imageUrl: "https://cdn.inet.se/product/688x386/8310227_iki8t2.png",
       productUrl: "https://www.inet.se/produkt/v101661/switchbot-bot-vit-2-pack"
     },
@@ -71,6 +83,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen",
       description: "IP44-utomhusuttag med energimätning och lokal Homey-styrning.",
       limitation: "Kräver 2,4 GHz Wi-Fi. Webblager kontrollerades 23 oktober. Paketpris jämfört med tre separata styckpriser. Kontrollera aktuellt pris före köp.",
+      whyGoodDeal: "Paketpris 747 kr jämfört med 1 047 kr för tre separata uttag, cirka 28,7 % lägre. Rabatten avser ett paket jämfört med styckköp, inte nödvändigtvis marknadens lägsta pris.",
+      fitForSetup: "Passar Homey som huvudsystem för styrning av utomhusanslutna laster via Wi-Fi. Kontrollera täckning och aktuell Homey-integration innan du bestämmer dig.",
+      useCases: ["Schemalägg utomhusbelysning med Homey Flows utifrån solnedgång eller närvaro.","Följ elförbrukning för exempelvis dekorationsbelysning eller andra lämpliga utomhuslaster.","Skapa tillfälliga säsongsautomationer utan fast elinstallation."],
       imageUrl: "https://cdn.inet.se/product/688x386/v101555_uhd4cs.png",
       productUrl: "https://www.inet.se/produkt/v101555/shelly-outdoor-plug-s-gen3-3-pack"
     },
@@ -89,6 +104,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen",
       description: "Tre 16 A-uttag med energimätning. Fungerar även som Zigbee-router.",
       limitation: "För inomhusbruk. Lager kontrollerades vid tidigare sökning den 24 oktober. Jämförelsepriset motsvarar tre styckpriser; rabatt mot marknadspris kan avvika.",
+      whyGoodDeal: "Tre uttag för 399 kr mot 597 kr vid separata styckköp, cirka 33,2 % lägre. Jämförelsen gäller butikens styckpris.",
+      fitForSetup: "Zigbee-uttag kan komplettera Homeys befintliga Zigbee-nät utan att enheter behöver flyttas till Home Assistant. Kontrollera att just E2-modellen och energimätningen stöds i Homey.",
+      useCases: ["Mät energiförbrukningen hos skrivbordselektronik eller andra lämpliga apparater.","Slå av enheter automatiskt med Homey Flows när huset lämnas.","Använd nätanslutna uttag som möjliga Zigbee-routrar för bättre räckvidd, om nätets topologi och enhetsstödet tillåter."],
       imageUrl: "https://cdn.inet.se/product/688x386/v101497_1.png",
       productUrl: "https://www.inet.se/produkt/v101497/thirdreality-smart-plug-e2-3-pack"
     },
@@ -107,6 +125,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen",
       description: "E27 RGB+CCT-lampor med stöd för både Zigbee och Matter over Thread.",
       limitation: "Använd med konstant matningsspänning, inte bakom dimmer som reglerar spänningen.",
+      whyGoodDeal: "Tidigare paketpris 537 kr mot 777 kr i referenspris, cirka 30,9 % lägre. Erbjudandet är historiskt och inte verifierat som aktuellt.",
+      fitForSetup: "Kan vara relevant för ljusscener i Homey. Välj den anslutningsmetod som faktiskt stöds av Homey för den aktuella lampversionen; undvik att skapa ett separat Thread-nät enbart för lamporna.",
+      useCases: ["Skapa varmvita kvällsscener eller färgscener i ett utvalt rum.","Koppla belysningen till Homey Flows för rörelse, tid eller närvaro.","Visa och styra ljusstyrka i Home Assistant om Homey-integrationen exponerar funktionerna."],
       imageUrl: "",
       productUrl: ""
     },
@@ -125,6 +146,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen för grundfunktion",
       description: "Rörelse- och ljussensorer för Homeys Thread-nät.",
       limitation: "Avancerade Aqara-inställningar kan kräva Aqara-hubb; användarrapporter har nämnt falska rörelsedetekteringar. Webblager kontrollerades vid tidigare sökning 24 oktober. Kräver fungerande Matter/Thread-parning i Homey Pro.",
+      whyGoodDeal: "Tidigare verifierat paketpris 837 kr mot 1 197 kr, cirka 30,1 % lägre. Kontrollera aktuellt pris, lager och funktionsstöd före köp.",
+      fitForSetup: "Matter over Thread kan vara ett sätt att ansluta rörelsesensorer till Homey Pro utan att Home Assistant tar över. Säkerställ att Homeys Matter/Thread-stöd exponerar de sensorer du behöver.",
+      useCases: ["Tänd hall- eller förrådsbelysning när rörelse upptäcks.","Kombinera rörelse och ljusnivå i Homey Flows för att undvika tändning i dagsljus.","Skapa enkel närvarostatistik eller rumsstatus i Home Assistant via Homey, om värdena exponeras."],
       imageUrl: "https://cdn.inet.se/product/688x386/v101603_8pfapl.png",
       productUrl: "https://www.inet.se/produkt/v101603/aqara-rorelse-och-ljussensor-p2-3-pack"
     },
@@ -143,6 +167,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen",
       description: "Infällt 16 A-relä med energimätning och lokal styrning via Homey.",
       limitation: "Fast elinstallation ska göras på ett säkert och korrekt sätt.",
+      whyGoodDeal: "Tidigare pris 149 kr mot referenspris 239 kr, cirka 37,7 % lägre. Det är ett historiskt pris och inte ett aktuellt köpråd.",
+      fitForSetup: "Kan ge Homey lokal styrning och energimätning bakom en befintlig strömbrytare eller vid en lämplig last. Fast installation kräver behörig elinstallationsverksamhet där så krävs.",
+      useCases: ["Styr en fast installerad ljuskrets via Homey utan att byta armatur.","Mät förbrukningen för en lämplig krets och följ den i Homey eller Home Assistant.","Kombinera ett relä med Homey Flows för tidsstyrning eller frånvaroläge."],
       imageUrl: "",
       productUrl: ""
     },
@@ -161,6 +188,9 @@ window.DEALS_DATA = {
       extraHub: "Ingen för grundfunktion",
       description: "Temperatur- och luftfuktighetssensor med 3,4-tums display och knappar.",
       limitation: "Vissa Aqara-specifika display- eller HVAC-funktioner kan kräva Aqara-hubb.",
+      whyGoodDeal: "Tidigare pris 349 kr mot 499 kr, cirka 30,1 % lägre. Priset är historiskt och behöver kontrolleras före köp.",
+      fitForSetup: "En lokal display för temperatur och luftfuktighet kan komplettera dina planerade rumsdisplayer. Kontrollera Homey-stöd för den aktuella modellen och vilka knappar eller extrafunktioner som faktiskt exponeras.",
+      useCases: ["Läs av temperatur och luftfuktighet direkt i ett rum utan att öppna en app.","Använd klimatvärden som villkor i Homey Flows om sensorerna exponeras.","Utvärdera en fysisk rumssensor som komplement till framtida små touchdisplayer."],
       imageUrl: "",
       productUrl: ""
     },
