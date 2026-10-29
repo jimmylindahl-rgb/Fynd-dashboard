@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
   <meta name="color-scheme" content="dark light">
   <title>Fynddashboard</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=20261029-2">
 </head>
 <body>
   <header class="topbar">
@@ -15,9 +15,17 @@
       <h1>Fynddashboard</h1>
       <p class="subtitle">Smarta hem och homelab – samlat på ett ställe.</p>
     </div>
-    <div class="update-card" aria-live="polite">
-      <span>Senast uppdaterad</span>
-      <strong id="lastUpdated">–</strong>
+    <div class="update-stats" aria-label="Status för fyndbevakningen" aria-live="polite">
+      <div class="update-card">
+        <span>Senaste fyndbevakning</span>
+        <strong id="lastChecked">Ej verifierad</strong>
+        <small id="lastCheckNote">Inväntar nästa slutförda körning.</small>
+      </div>
+      <div class="update-card">
+        <span>Senaste nya fynd</span>
+        <strong id="lastDealAdded">–</strong>
+        <small>Senast ett nytt fynd lades till i dashboarden.</small>
+      </div>
     </div>
   </header>
 
@@ -64,10 +72,17 @@
     </section>
   </main>
 
+  <dialog id="dealDialog" class="deal-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-shell">
+      <button id="dialogClose" class="dialog-close" type="button" aria-label="Stäng detaljvyn">✕</button>
+      <div id="dialogContent"></div>
+    </div>
+  </dialog>
+
   <footer>
     <p>Privat dashboard. Produktpriser kan ändras snabbt – kontrollera alltid butikens aktuella pris före köp.</p>
   </footer>
 
-  <script src="./app.js?v=20261029-1"></script>
+  <script src="./app.js?v=20261029-2"></script>
 </body>
 </html>
