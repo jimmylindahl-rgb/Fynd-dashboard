@@ -1,6 +1,7 @@
 (() => {
-  const data = window.DEALS_DATA || { deals: [] };
-  const deals = Array.isArray(data.deals) ? data.deals : [];
+  let data = { deals: [] };
+  let deals = [];
+  let refreshInFlight = false;
 
   const state = {
     category: "all",
@@ -157,6 +158,53 @@
     render();
   });
 
-  summary();
-  render();
+  // Load deal data with a unique URL so browser and CDN caches cannot keep an old version.
+  // Poll while the dashboard is open, and also refresh when the user returns to the tab.
+  function refreshDeals() {
+    if (refreshInFlight || document.visibilityState === "hidden") return;
+    refreshInFlight = true;
+
+    const script = document.createElement("script");
+    const url = new URL("./deals.js", document.baseURI);
+    url.searchParams.set("v", Date.now().toString());
+    script.src = url.href;
+    script.async = true;
+
+    const finish = () => {
+      refreshInFlight = false;
+      script.remove();
+    };
+
+    script.onload = () => {
+      const latest = window.DEALS_DATA;
+      if (latest && Array.isArray(latest.deals)) {
+        if (JSON.stringify(latest) !== JSON.stringify(data)) {
+          data = latest;
+          deals = latest.deals;
+          summary();
+          render();
+        }
+      } else if (!deals.length) {
+        el.notice.textContent = "Fynddatan kunde inte läsas. Försök ladda om sidan.";
+      }
+      finish();
+    };
+
+    script.onerror = () => {
+      if (!deals.length) {
+        el.notice.textContent = "Kunde inte hämta fynddata. Kontrollera anslutningen och försök igen.";
+      }
+      finish();
+    };
+
+    document.head.appendChild(script);
+  }
+
+  el.notice.textContent = "Hämtar senaste fynd...";
+  refreshDeals();
+  setInterval(refreshDeals, 5 * 60 * 1000);
+  window.addEventListener("focus", refreshDeals);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") refreshDeals();
+  });
 })();
