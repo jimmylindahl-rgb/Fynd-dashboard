@@ -1,7 +1,7 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-10-29T13:48:47+01:00",
-  lastChecked: "2026-10-29T13:48:31+01:00",
-  lastCheckNote: "Bevakning slutförd, 3 nya smarta hem-fynd. Inga verifierat kvalificerade homelab-fynd.",
+  lastUpdated: "2026-10-30T12:04:32+01:00",
+  lastChecked: "2026-10-30T12:04:32+01:00",
+  lastCheckNote: "Bevakning slutförd, inga nya fynd.",
   lastDealAdded: "2026-10-29T13:48:31+01:00",
   note: "Nya fynd kontrollerades den 29 oktober 2026. Äldre fynd kan ha pris- och lageruppgifter från 24 oktober eller tidigare och är inte automatiskt omverifierade. Historiska fynd är inte aktuella köpråd. Jämförelsepriser kan avse butikernas ordinarie priser eller styckpriser.",
   deals: [
