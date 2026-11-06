@@ -1,0 +1,8 @@
+{
+  "name": "fynd-dashboard",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/check-syntax.cjs && node scripts/validate-deals.cjs && node --test tests/*.test.cjs"
+  },
+  "engines": { "node": ">=22" }
+}
