@@ -1,7 +1,7 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-07T12:00:45+01:00",
-  lastChecked: "2026-11-07T12:00:45+01:00",
-  lastCheckNote: "Bevakning slutförd, 2 nya smarta hem-fynd.",
+  lastUpdated: "2026-11-08T11:58:53+01:00",
+  lastChecked: "2026-11-08T11:58:53+01:00",
+  lastCheckNote: "Bevakning slutförd, inga nya fynd.",
   lastDealAdded: "2026-11-07T12:00:45+01:00",
   note: "Nya fynd kontrollerades 2026-11-07. Äldre fynd kan ha gamla pris- och lageruppgifter och är inte automatiskt omverifierade. Telldus-jämförelsepriserna är butikens överstrukna priser, inte verifierade 30-dagars lägsta priser. Kontrollera alltid modellstöd, frakt och pris före köp.",
   deals: [
