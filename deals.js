@@ -1,10 +1,35 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-11T12:06:29.433+01:00",
-  lastChecked: "2026-11-11T12:06:29.433+01:00",
-  lastCheckNote: "Bevakning slutförd, 2 nya fynd (smarta hem).",
-  lastDealAdded: "2026-11-11T12:06:29.433+01:00",
-  note: "Nya fynd kontrollerades 11 november 2026 hos Inet och Komplett, med Homey-stöd bedömt mot Shellys officiella Homey-app. Äldre fynd kan ha gamla priser och lageruppgifter; de är inte omverifierade. Jämförelsepris kan vara butikens tidigare pris, inte lägsta marknadspris. Kontrollera frakt och modellstöd före köp.",
+  lastUpdated: "2026-11-12T12:06:14+01:00",
+  lastChecked: "2026-11-12T12:06:14+01:00",
+  lastCheckNote: "Bevakning slutförd, 1 nytt fynd (smarta hem).",
+  lastDealAdded: "2026-11-12T12:06:14+01:00",
+  note: "Nytt Tapo C310-erbjudande kontrollerat 12 november 2026 hos NetOnNet; lokal RTSP/ONVIF-drift stöds av tillverkaren men direkt Homey-stöd är inte verifierat. Äldre fynd kan ha äldre pris- och lageruppgifter och är inte automatiskt omverifierade. Kontrollera alltid frakt, modellstöd och aktuellt lager före köp.",
   deals: [
+    {
+      "id": "tp-link-tapo-c310-netonnet-20261112",
+      "date": "2026-11-12",
+      "category": "smart-home",
+      "status": "active",
+      "name": "TP-Link Tapo C310 – IP66 utomhuskamera, 3 MP, Wi-Fi/Ethernet",
+      "store": "NetOnNet",
+      "price": 399,
+      "referencePrice": 599,
+      "discountPercent": 33.4,
+      "compatibility": "Home Assistant-komplement (lokal RTSP/ONVIF; Homey-stöd ej verifierat)",
+      "protocol": "2,4 GHz Wi-Fi / Ethernet, RTSP / ONVIF Profile S (3 MP, 2304×1296)",
+      "extraHub": "Ingen extra hubb; Tapo-appen för första konfigurationen, 9 V nätadapter (ingår); inte PoE",
+      "description": "Fastmatad IP66-kamera för utomhusbruk med 3 MP, IR-mörkerseende upp till 30 m och mikrofon/högtalare. NetOnNets Tjuvstart-pris gäller enligt butiken t.o.m. 22 november 2026 eller så långt lagret räcker. Lokal videoström via RTSP/ONVIF stöds enligt TP-Links dokumentation.",
+      "limitation": "Prioriteras endast som Home Assistant-komplement, INTE som direkt Homey-enhet; bekräftat lokalt stöd gäller videoström, inte alla larmfunktioner. Första konfiguration och separat kamera-användare kräver Tapo-appen. Kräver strömadapter till eluttag även med Ethernet – har ingen PoE. RTSP/ONVIF kan påverkas av firmware och konfiguration; exponera aldrig RTSP-porten mot internet. Frakt bestäms i kassan, eventuellt microSD-kort tillkommer. Pris/lager kontrollerade 12 november 2026.",
+      "whyGoodDeal": "NetOnNet anger 399 kr mot tidigare lägsta pris 599 kr, alltså 200 kr eller cirka 33,4 % lägre. Prisjakt visar cirka 399 kr som aktuellt lägsta marknadspris: detta är en verifierad tidsbegränsad butikssänkning, inte ett unikt lägsta pris jämfört med alla återförsäljare. Lämpligt framför allt om en extra kameravy behövs.",
+      "fitForSetup": "Kan användas som separat, billig lokal kamerakälla till befintliga Home Assistant på Proxmox, via RTSP/ONVIF, bredvid befintlig Reolink-kamera. Homey Pro 2026 behåller samtliga Zigbee/Z-Wave/Matter/Thread-enheter och automationslogik; Tapo behöver inte migrera några enheter. Inget verifierat direkt Homey-stöd. Om ytterligare kamera inte behövs är det inte en angelägen uppgradering.",
+      "useCases": [
+        "Komplettera Reolink-dörrklockan med en kameravy mot en annan del av tomten och visa strömmen på Home Assistant-panelen.",
+        "Visa en separat kamerabild i en HA-dashboard på surfplattan utan ny Zigbee- eller Thread-hubb.",
+        "Spela in lokal videoström till kompatibel NVR eller annan lagringslösning om senare behov uppstår, efter kontroll av lagring och belastning."
+      ],
+      "imageUrl": "https://images.netonnet.com/rs/w:1920/q:75/f:webp/plain/https://www.netonnet.se/GetFile/ProductImagePrimary/(1016131)_586357_extra.webp",
+      "productUrl": "https://www.netonnet.se/art/hem-fritid/smarta-hem/overvakningskamera/tp-link-tapo-c310/1016131.9438/"
+    },
     {
       "id": "shelly-plug-m-gen3-black-komplett-20261111",
       "date": "2026-11-11",
