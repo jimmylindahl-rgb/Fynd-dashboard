@@ -1,7 +1,7 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-13T11:58:38+01:00",
-  lastChecked: "2026-11-13T11:58:38+01:00",
-  lastCheckNote: "Bevakning slutförd, 2 nya fynd (smarta hem). Inga nya kvalificerade homelab-fynd.",
+  lastUpdated: "2026-11-14T11:58:42+01:00",
+  lastChecked: "2026-11-14T11:58:42+01:00",
+  lastCheckNote: "Bevakning slutförd, inga nya kvalificerade fynd.",
   lastDealAdded: "2026-11-13T11:58:38+01:00",
   note: "Två Govee Matter-golvlampor kontrollerade 13 november 2026 hos NetOnNet. Grundläggande Matter-kompatibilitet är dokumenterad, men exakt Homey-parning är inte praktiskt testad. Äldre fynd kan ha äldre priser eller lageruppgifter. Kontrollera alltid pris, frakt, nätverkskrav och integrationsstöd före köp.",
   deals: [
