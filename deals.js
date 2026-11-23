@@ -1,10 +1,35 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-22T21:22:11.324+01:00",
-  lastChecked: "2026-11-22T21:22:11.324+01:00",
-  lastCheckNote: "Bevakning slutförd, 3 nya fynd.",
-  lastDealAdded: "2026-11-22T21:22:11.324+01:00",
+  lastUpdated: "2026-11-23T15:45:10+01:00",
+  lastChecked: "2026-11-23T15:45:10+01:00",
+  lastCheckNote: "Bevakning slutförd, 1 nytt fynd.",
+  lastDealAdded: "2026-11-23T15:45:10+01:00",
   note: "Två Govee Matter-golvlampor kontrollerade 13 november 2026 hos NetOnNet. Grundläggande Matter-kompatibilitet är dokumenterad, men exakt Homey-parning är inte praktiskt testad. Äldre fynd kan ha äldre priser eller lageruppgifter. Kontrollera alltid pris, frakt, nätverkskrav och integrationsstöd före köp.",
   deals: [
+    {
+        "id": "philips-wiz-rgbic-4m-power-20261123",
+        "date": "2026-11-23",
+        "category": "smart-home",
+        "status": "active",
+        "name": "Philips Connected by WiZ RGBIC LED-list 4 m – Matter",
+        "store": "POWER",
+        "price": 223,
+        "referencePrice": 319,
+        "discountPercent": 30.1,
+        "compatibility": "Homey via Matter (exakt modellparning ej praktiskt verifierad)",
+        "protocol": "Matter over Wi-Fi; 2,4 GHz Wi-Fi/Bluetooth; RGBIC; 4 m",
+        "extraHub": "Ingen extra hubb för grundläggande Matter-styrning via Homey Pro 2026",
+        "description": "POWER Black Friday: 223 kr mot angivet tidigare lägsta pris 319 kr; kampanj 9–30 november, 10+ i webblager enligt kampanjsidan den 23 november. Frakt kontrolleras i kassan.",
+        "limitation": "Exakt produktmodell och Homey-parning är inte praktiskt verifierade. RGBIC-effekter, musikfunktioner och SpaceSense kan kräva WiZ-appen och behöver inte exponeras via Matter. Länken går till POWERs kampanjlista eftersom en stabil direkt produktadress inte kunde verifieras.",
+        "whyGoodDeal": "POWER anger 223 kr mot tidigare lägsta 319 kr, en besparing på 96 kr eller 30,1 %. Referensen avser butikens redovisade tidigare lägsta pris, inte verifierat lägsta marknadspris; frakt kan påverka.",
+        "fitForSetup": "Matter över Wi-Fi gör lampan relevant för Homey Pro 2026 som huvudkontroller. Befintliga Homey-anslutna Zigbee/Thread-enheter behöver inte flyttas. Kontrollera lokal IPv6/mDNS och att exakt LED-list paras i Homey innan köp.",
+        "useCases": [
+            "Montera diskret accentbelysning under en hylla och styra grundläggande ljus via Homey Flow.",
+            "Dimra belysning vid kvälls- eller godnattflöden i Homey.",
+            "Skapa färgade ljusscener via Matter där stödet finns, eller med WiZ-appen för avancerade effekter."
+        ],
+        "productUrl": "https://www.power.se/kampanj/black-friday/smart-home/",
+        "imageUrl": ""
+    },
     {
       "id": "tapo-p410m-netonnet-20261122",
       "date": "2026-11-22",
