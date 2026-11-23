@@ -213,6 +213,25 @@ function onDealGridClick(event) {
     el.empty.hidden = items.length > 0;
   }
 
+  // Replace broken third-party images with the same fallback used for missing images.
+  // Capture load errors for both cards and the detail dialog.
+  function handleBrokenProductImage(event) {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement)) return;
+    const media = img.closest(".product-media, .detail-media");
+    if (!media) return;
+    const card = img.closest(".deal-card");
+    const deal = card ? deals.find(x => x.id === card.dataset.dealId) : null;
+    const icon = deal ? iconFor(deal) : "📦";
+    const fallback = document.createElement("span");
+    fallback.className = "product-placeholder";
+    fallback.setAttribute("aria-hidden", "true");
+    fallback.textContent = icon;
+    img.replaceWith(fallback);
+  }
+  el.grid.addEventListener("error", handleBrokenProductImage, true);
+  el.dialogContent.addEventListener("error", handleBrokenProductImage, true);
+
   el.grid.addEventListener("click", onDealGridClick);
   el.dialogClose.addEventListener("click", () => el.dialog.close());
   el.dialog.addEventListener("click", event => {
