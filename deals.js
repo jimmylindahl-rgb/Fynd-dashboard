@@ -19,7 +19,7 @@ window.DEALS_DATA = {
         "protocol": "Matter over Wi-Fi; 2,4 GHz Wi-Fi/Bluetooth; RGBIC; 4 m",
         "extraHub": "Ingen extra hubb för grundläggande Matter-styrning via Homey Pro 2026",
         "description": "POWER Black Friday: 223 kr mot angivet tidigare lägsta pris 319 kr; kampanj 9–30 november, 10+ i webblager enligt kampanjsidan den 23 november. Frakt kontrolleras i kassan.",
-        "limitation": "Exakt produktmodell och Homey-parning är inte praktiskt verifierade. RGBIC-effekter, musikfunktioner och SpaceSense kan kräva WiZ-appen och behöver inte exponeras via Matter. Länken går till POWERs kampanjlista eftersom en stabil direkt produktadress inte kunde verifieras.",
+        "limitation": "Exakt produktmodell och Homey-parning är inte praktiskt verifierade. RGBIC-effekter, musikfunktioner och SpaceSense kan kräva WiZ-appen och behöver inte exponeras via Matter. Direkt produktlänk har inte kunnat verifieras; butikslänken är tillfälligt avaktiverad för att undvika felaktig navigering.",
         "whyGoodDeal": "POWER anger 223 kr mot tidigare lägsta 319 kr, en besparing på 96 kr eller 30,1 %. Referensen avser butikens redovisade tidigare lägsta pris, inte verifierat lägsta marknadspris; frakt kan påverka.",
         "fitForSetup": "Matter över Wi-Fi gör lampan relevant för Homey Pro 2026 som huvudkontroller. Befintliga Homey-anslutna Zigbee/Thread-enheter behöver inte flyttas. Kontrollera lokal IPv6/mDNS och att exakt LED-list paras i Homey innan köp.",
         "useCases": [
@@ -27,7 +27,7 @@ window.DEALS_DATA = {
             "Dimra belysning vid kvälls- eller godnattflöden i Homey.",
             "Skapa färgade ljusscener via Matter där stödet finns, eller med WiZ-appen för avancerade effekter."
         ],
-        "productUrl": "https://www.power.se/kampanj/black-friday/smart-home/",
+        "productUrl": "",
         "imageUrl": ""
     },
     {
@@ -77,8 +77,8 @@ window.DEALS_DATA = {
         "Skapa varmvit orienteringsbelysning med låg ljusstyrka på natten.",
         "Använd färgat accentljus i ett rum via Homey om funktionerna exponeras."
       ],
-      "productUrl": "https://www.netonnet.se/art/hem-fritid/smarta-hem/smart-belysning/smarta-lampor",
-      "imageUrl": ""
+      "productUrl": "https://www.netonnet.se/art/hem-fritid/smarta-hem/smart-belysning/smarta-lampor/tp-link-tapo-l535e/1057144.18994/",
+      "imageUrl": "https://images.netonnet.com/rs/w:1920/q:75/f:webp/plain/https://www.netonnet.se/GetFile/ProductImagePrimary/(1057144)_735468_small.webp"
     },
     {
       "id": "aqara-smoke-sd-s01d-netonnet-20261122",
