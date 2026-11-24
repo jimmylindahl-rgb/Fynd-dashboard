@@ -1,10 +1,85 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-23T15:45:10+01:00",
-  lastChecked: "2026-11-23T15:45:10+01:00",
-  lastCheckNote: "Bevakning slutförd, 1 nytt fynd.",
-  lastDealAdded: "2026-11-23T15:45:10+01:00",
+  lastUpdated: "2026-11-24T12:00:21+01:00",
+  lastChecked: "2026-11-24T12:00:21+01:00",
+  lastCheckNote: "Bevakning slutförd, 3 nya fynd. Produktlänk och bild för WiZ-list uppdaterade.",
+  lastDealAdded: "2026-11-24T12:00:21+01:00",
   note: "Två Govee Matter-golvlampor kontrollerade 13 november 2026 hos NetOnNet. Grundläggande Matter-kompatibilitet är dokumenterad, men exakt Homey-parning är inte praktiskt testad. Äldre fynd kan ha äldre priser eller lageruppgifter. Kontrollera alltid pris, frakt, nätverkskrav och integrationsstöd före köp.",
   deals: [
+    {
+      "id": "cyberpower-vp1000eilcd-proshop-20261124",
+      "date": "2026-11-24",
+      "category": "homelab",
+      "status": "active",
+      "name": "CyberPower VP1000EILCD – UPS 1000 VA / 550 W",
+      "store": "Proshop.se",
+      "price": 999,
+      "referencePrice": 1535,
+      "discountPercent": 34.9,
+      "compatibility": "Homelab-komplement; USB-övervakning, exakt Linux/NUT-stöd ej verifierat",
+      "protocol": "Line-interactive, AVR, USB/RS-232, 6 × IEC C13; simulerad sinusvåg på batteri",
+      "extraHub": "Ingen; lämpliga IEC C14-kablar eller jordade IEC–Schuko-adaptrar kan krävas. USB-kabel ingår enligt tillverkaren.",
+      "description": "Proshops kampanj 19–30 november 2026 anger 999 kr inklusive moms mot normalpris 1 535 kr, 13 i lager i den senast tillgängliga produktsidesavläsningen (20 november). Frakt från 59 kr. Tillverkaren anger 9 minuters drift vid 275 W.",
+      "limitation": "Inga vanliga Schuko-uttag. Kontrollera nätaggregatens kompatibilitet med simulerad sinusvåg (tillverkarens specifikation), kabelbehov och praktiskt Linux-stöd innan obevakad drift. Batteritiden beror på belastning och batteriets skick. UPS ersätter inte säkerhetskopior.",
+      "whyGoodDeal": "536 kr eller 34,9 % lägre än butikens normalpris. Levererat från 1 058 kr. Kampanjperioden omfattar dagens datum, men lagersaldot kommer från en några dagar gammal avläsning. Kontrollera pris och lager i kassan. Referensen är butikens normalpris, inte marknadens prishistorik.",
+      "fitForSetup": "Kan skydda EliteDesk 800 G5 Mini och dess Proxmox-VM:er mot korta avbrott. Ingen intern hårdvaruändring eller flytt av Homey-enheter behövs. USB-övervakning och säker avstängning måste konfigureras och testas på Proxmox-värden.",
+      "useCases": [
+        "Ge mini-PC:n reservkraft vid korta strömavbrott.",
+        "Testa kontrollerad avstängning av VM:er och Proxmox vid låg batterinivå.",
+        "Ge en mindre switch eller router reservkraft inom UPS:ens kapacitet."
+      ],
+      "imageUrl": "https://www.proshop.se/Images/915x900/2893202_82c0bfe833fa.png",
+      "productUrl": "https://www.proshop.se/UPS/CyberPower-VP1000EILCD-1000VA550W-UPS/2893202"
+    },
+    {
+      "id": "homey-bridge-inet-20261124",
+      "date": "2026-11-24",
+      "category": "smart-home",
+      "status": "active",
+      "name": "Homey Bridge – satellit till Homey Pro",
+      "store": "Inet",
+      "price": 569,
+      "referencePrice": 799,
+      "discountPercent": 28.8,
+      "compatibility": "Direkt/lokalt Homey (officiellt Satellite Mode för Homey Pro 2026)",
+      "protocol": "Wi-Fi/LAN-kommunikation till Homey Pro; Zigbee, Z-Wave, Bluetooth LE, 433 MHz, IR",
+      "extraHub": "Befintlig Homey Pro är huvudhubb; Bridge är satellit. Wi-Fi och internet vid uppstart krävs.",
+      "description": "Inet visar 569 kr, tre i webblager och fri frakt vid kontroll 24 november. Samma kampanjpris finns också hos Kjell. Homeys officiella Black Friday-kampanj pågår till 30 november.",
+      "limitation": "Ingen Thread-repeater eller Thread Border Router. Homey anger internetautentisering vid uppstart även i satellitläge. Zigbee/Z-Wave utökas inom samma plats, inte till en separat byggnad. 433 MHz-dubbelmottagning kan i vissa fall trigga Flows dubbelt. Köp bara om det finns ett faktiskt räckviddsbehov.",
+      "whyGoodDeal": "230 kr eller 28,8 % under Inets angivna 799 kr; fri frakt och officiellt stöd gör den relevant. Samma pris hos Kjell, så inte ett exklusivt Inet-fynd.",
+      "fitForSetup": "Homey Pro 2026 förblir huvudkontroller; satelliten ansluter till befintligt Zigbee- och Z-Wave-nät som nätmatad repeater. Befintliga enheter flyttas inte till Home Assistant. Kan också hjälpa till med 433 MHz-räckvidd och IR i andra rum. Ingen separat Homey Cloud-prenumeration behövs för användning som satellit.",
+      "useCases": [
+        "Förstärk Zigbee- eller Z-Wave-mesh i en del av huset med svag täckning.",
+        "Placera satelliten nära ett 433 MHz-uttag som har svag räckvidd.",
+        "Skicka IR-kommandon till en kompatibel apparat i ett annat rum."
+      ],
+      "imageUrl": "https://cdn.inet.se/product/688x386/8309923_u7tv19.png",
+      "productUrl": "https://www.inet.se/produkt/8309923/homey-bridge"
+    },
+    {
+      "id": "aqara-temp-humidity-t1-single-netonnet-20261124",
+      "date": "2026-11-24",
+      "category": "smart-home",
+      "status": "active",
+      "name": "Aqara Temperature/Humidity Sensor T1 (TH-S02D), 1-pack",
+      "store": "NetOnNet",
+      "price": 159,
+      "referencePrice": 229,
+      "discountPercent": 30.6,
+      "compatibility": "Direkt/lokalt Homey (Aqara-app listar T1)",
+      "protocol": "Zigbee 3.0; temperatur, luftfuktighet, lufttryck; CR2032",
+      "extraHub": "Ingen extra hubb för direkt Zigbee-anslutning till Homey Pro.",
+      "description": "NetOnNets Black Week-lista visar 159 kr mot tidigare lägsta pris 229 kr. Produktsidan visar lager och kampanj till 30 november, max två per kund/hushåll. Frakt kontrolleras i kassan.",
+      "limitation": "Max två per kund. Vid ett styckköp kan frakten äta upp besparingen; jämför med befintligt Inet-fynd för trepack. Testa att mätvärden uppdateras pålitligt i Homey och att Zigbee-räckvidden räcker.",
+      "whyGoodDeal": "70 kr eller 30,6 % under butikens tidigare lägsta pris. 159 kr per sensor är även något lägre än 165 kr per sensor i tidigare registrerat Inet-trepack, men frakt och antal avgör totalpriset.",
+      "fitForSetup": "Exakt TH-S02D finns dokumenterad i Aqara-drivrutinen för Homey. Direkt lokal Zigbee till Homey Pro 2026, utan Aqara-hubb eller flytt till HA. HA kan vid behov visa värden via Homey-integrationen.",
+      "useCases": [
+        "Följ temperatur och luftfuktighet i ett förråd eller en källare.",
+        "Skicka en Homey-notis vid hög luftfuktighet.",
+        "Visa klimatdata i en kompletterande Home Assistant-dashboard."
+      ],
+      "imageUrl": "https://images.netonnet.com/rs/w:1920/q:75/f:webp/plain/https://www.netonnet.se/GetFile/ProductImagePrimary/(1032336)_622059_extra.webp",
+      "productUrl": "https://www.netonnet.se/art/hem-fritid/aqara-temperaturehumidity-sensor-t1/1032336.8883/"
+    },
     {
         "id": "philips-wiz-rgbic-4m-power-20261123",
         "date": "2026-11-23",
@@ -19,7 +94,7 @@ window.DEALS_DATA = {
         "protocol": "Matter over Wi-Fi; 2,4 GHz Wi-Fi/Bluetooth; RGBIC; 4 m",
         "extraHub": "Ingen extra hubb för grundläggande Matter-styrning via Homey Pro 2026",
         "description": "POWER Black Friday: 223 kr mot angivet tidigare lägsta pris 319 kr; kampanj 9–30 november, 10+ i webblager enligt kampanjsidan den 23 november. Frakt kontrolleras i kassan.",
-        "limitation": "Exakt produktmodell och Homey-parning är inte praktiskt verifierade. RGBIC-effekter, musikfunktioner och SpaceSense kan kräva WiZ-appen och behöver inte exponeras via Matter. Direkt produktlänk har inte kunnat verifieras; butikslänken är tillfälligt avaktiverad för att undvika felaktig navigering.",
+        "limitation": "Modell 929004706621 (EAN 8721103159625); Homey-parning är inte praktiskt verifierad. RGBIC-effekter, musikfunktioner och SpaceSense kan kräva WiZ-appen och behöver inte exponeras via Matter. Produktnummer 4534646 och bild har identifierats 24 november. Prisninja bekräftar 223 kr och anger frakt från 49 kr.",
         "whyGoodDeal": "POWER anger 223 kr mot tidigare lägsta 319 kr, en besparing på 96 kr eller 30,1 %. Referensen avser butikens redovisade tidigare lägsta pris, inte verifierat lägsta marknadspris; frakt kan påverka.",
         "fitForSetup": "Matter över Wi-Fi gör lampan relevant för Homey Pro 2026 som huvudkontroller. Befintliga Homey-anslutna Zigbee/Thread-enheter behöver inte flyttas. Kontrollera lokal IPv6/mDNS och att exakt LED-list paras i Homey innan köp.",
         "useCases": [
@@ -27,8 +102,8 @@ window.DEALS_DATA = {
             "Dimra belysning vid kvälls- eller godnattflöden i Homey.",
             "Skapa färgade ljusscener via Matter där stödet finns, eller med WiZ-appen för avancerade effekter."
         ],
-        "productUrl": "",
-        "imageUrl": ""
+        "productUrl": "https://www.power.se/smart-home/smart-belysning/smarta-ljusslingor/philips-connected-by-wiz-rgbic-smart-led-list-4-m/p-4534646/",
+        "imageUrl": "https://media.power-cdn.net/images/h-51f6e2e7566dedc4bd54c76a3d57e5f3/products/4534646/4534646_4_1200x1200_w_g.jpg"
     },
     {
       "id": "tapo-p410m-netonnet-20261122",
