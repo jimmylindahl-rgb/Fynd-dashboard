@@ -1,5 +1,6 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-27T17:57:37+01:00",
+  lastRun: "2026-11-27T17:57:37+01:00",
+  lastUpdated: "2026-11-27T17:03:54.546+00:00",
   lastChecked: "2026-11-24T12:00:21+01:00",
   lastCheckNote: "Delkontroll 27 november: 2 nya fynd. StyraHem, Elgiganten och POWER gav användbara resultat; övriga källor ej fullständigt verifierade.",
   lastDealAdded: "2026-11-27T17:57:37+01:00",
