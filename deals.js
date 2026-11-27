@@ -1,10 +1,58 @@
 window.DEALS_DATA = {
-  lastUpdated: "2026-11-24T12:00:21+01:00",
+  lastUpdated: "2026-11-27T17:57:37+01:00",
   lastChecked: "2026-11-24T12:00:21+01:00",
-  lastCheckNote: "Bevakning slutförd, 3 nya fynd. Produktlänk och bild för WiZ-list uppdaterade.",
-  lastDealAdded: "2026-11-24T12:00:21+01:00",
+  lastCheckNote: "Delkontroll 27 november: 2 nya fynd. StyraHem, Elgiganten och POWER gav användbara resultat; övriga källor ej fullständigt verifierade.",
+  lastDealAdded: "2026-11-27T17:57:37+01:00",
   note: "Två Govee Matter-golvlampor kontrollerade 13 november 2026 hos NetOnNet. Grundläggande Matter-kompatibilitet är dokumenterad, men exakt Homey-parning är inte praktiskt testad. Äldre fynd kan ha äldre priser eller lageruppgifter. Kontrollera alltid pris, frakt, nätverkskrav och integrationsstöd före köp.",
   deals: [
+    {
+      "id": "reolink-lumus-pro-elgiganten-20261127",
+      "name": "Reolink Lumus Pro 4K",
+      "store": "Elgiganten",
+      "price": 749,
+      "referencePrice": 1199,
+      "compatibility": "Home Assistant-komplement; exakt modellstöd bör kontrolleras",
+      "protocol": "Wi-Fi, 4K, IP65",
+      "extraHub": "Ingen separat hubb bekräftad",
+      "description": "Elgigantens Black Friday smart hem-sida anger 749 kr mot tidigare pris 1199 kr, till 30 november med reservation för slutförsäljning.",
+      "limitation": "Direktlänk och bild saknas; verifiera lokal integration före köp.",
+      "useCases": [
+        "Komplettera befintlig kameraövervakning",
+        "Visa kamerabild i HA om modellen stöds"
+      ],
+      "date": "2026-11-27",
+      "category": "smart-home",
+      "status": "active",
+      "discountPercent": 37.5,
+      "whyGoodDeal": "450 kr under butikens angivna referenspris.",
+      "fitForSetup": "Komplement till befintligt smart hem utan flytt av enheter; kontrollera exakt stöd.",
+      "imageUrl": "",
+      "productUrl": ""
+    },
+    {
+      "id": "matter-outdoor-plug-styrahem-20261127",
+      "name": "Utomhuskontakt med effektmätning, WiFi och Matter (modell ej verifierad)",
+      "store": "StyraHem",
+      "price": 239,
+      "referencePrice": 339,
+      "compatibility": "Homey via Matter, modell ej verifierad",
+      "protocol": "Matter over Wi-Fi enligt kampanjsidan",
+      "extraHub": "Normalt ingen extra hubb",
+      "description": "StyraHems Black Week-sida anger dagens deal 27 november: 239 kr mot lägsta pris senaste 30 dagarna 339 kr.",
+      "limitation": "Exakt modell, produktlänk och bild ej verifierade. Gäller endast 27 november. Kontrollera energimätning i Homey.",
+      "useCases": [
+        "Styra utebelysning",
+        "Schemalägga utomhusuttag"
+      ],
+      "date": "2026-11-27",
+      "category": "smart-home",
+      "status": "active",
+      "discountPercent": 29.5,
+      "whyGoodDeal": "100 kr under butikens angivna referenspris.",
+      "fitForSetup": "Komplement till befintligt smart hem utan flytt av enheter; kontrollera exakt stöd.",
+      "imageUrl": "",
+      "productUrl": ""
+    },
     {
       "id": "cyberpower-vp1000eilcd-proshop-20261124",
       "date": "2026-11-24",
