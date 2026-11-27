@@ -17,6 +17,7 @@
     search: document.getElementById("searchInput"),
     sort: document.getElementById("sortSelect"),
     tabs: document.getElementById("categoryTabs"),
+    lastRun: document.getElementById("lastRun"),
     lastChecked: document.getElementById("lastChecked"),
     lastCheckNote: document.getElementById("lastCheckNote"),
     lastDealAdded: document.getElementById("lastDealAdded"),
@@ -52,6 +53,7 @@
   const iconFor = deal => deal.category === "homelab" ? "🖥️" : "🏠";
 
   function summary() {
+    if (el.lastRun) el.lastRun.textContent = formatDate(data.lastRun || data.lastChecked);
     el.lastChecked.textContent = data.lastChecked ? formatDate(data.lastChecked) : "Ej verifierad";
     el.lastCheckNote.textContent = data.lastCheckNote || (data.lastChecked ? "Körningen slutfördes." : "Inväntar nästa bekräftade körning.");
     el.lastDealAdded.textContent = formatDate(data.lastDealAdded);
